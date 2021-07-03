@@ -1,0 +1,61 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #fafafa;
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .fire {
+        background: blue;
+        color: white;
+        padding: .6em 1.3em;
+        border-radius: 5em;
+    
+        font-size: 20px;
+        font-family: Impact, sans-serif;
+        text-decoration: none;
+
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    li {
+        margin: 15px 0px 10px 0px;
+    }
+
+    // Section Grey, 5 Elements with 15% Width & Red-Color arranged using Flexbox
+    .ele5 {
+        height: 300px;
+        width: 100%;
+        background-color: grey;
+        border: 5px solid yellow;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .child1 {
+            height: 200px;
+            width: 15%;
+            background-color: red;
+        }
+    }
+
+    // Section Black, 4 Elements with 20% Width & Grey-Color arranged using Display & Margin
+    .ele4 {
+        height: 300px;
+        width: 100%;
+        background-color: black;
+        border: 5px solid yellow;
+
+        .child2 {
+            height: 200px;
+            width: 20%;
+            background-color: grey;
+            display: inline-block;
+            margin: 50px 0px 0px 4%;
+        }
+    }
+}
