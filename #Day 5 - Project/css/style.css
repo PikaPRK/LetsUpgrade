@@ -77,7 +77,7 @@ body .header .container .nav .current {
 body .banner {
   height: 480px;
   width: 100%;
-  background-image: url("/images/banner.jpg");
+  background-image: url("../images/banner.jpg");
   background-size: 100% 480px;
   display: -webkit-box;
   display: -ms-flexbox;
