@@ -1,36 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
-  background-color: #fafafa;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 1em;
+  background: #f2f2f2;
+  font-family: "Poppins";
 }
-
-p {
-  color: black;
-  background-color: grey;
-  font-family: 'Arial Narrow Bold', sans-serif;
-  font-style: italic;
+body span {
+  color: #45b5fe;
 }
-
-.test-3 {
-  color: blue;
-  background-color: yellow;
-  border: black;
-  font-size: 25px;
-  font-family: Helvetica, sans-serif;
-}
-
-h3 {
-  font-family: Helvetica, sans-serif;
-}
-
-.fire {
-  text-align: ce;
-  background: blue;
+body a {
+  text-decoration: none;
   color: white;
-  padding: .6em 1.3em;
-  border-radius: 5em;
-  font-size: 20px;
-  font-family: Impact, sans-serif;
+}
+body a:hover {
+  font-weight: bold;
+  color: #45b5fe;
+}
+body .header {
+  height: 60px;
+  width: 100%;
+  background-color: #0e0d1a;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+}
+body .header .container {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+body .header .container .logo {
+  height: 60px;
+  width: 15%;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  line-height: 60px;
+}
+body .header .container .nav {
+  height: 60px;
+  width: 50%;
+  display: flex;
+}
+body .header .container .nav .nav-items {
+  width: 20%;
+  height: 60px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 60px;
+  color: white;
+  cursor: pointer;
+}
+body .header .container .nav .current {
+  font-weight: bold;
+  color: white;
+}
+body .banner {
+  height: 480px;
+  width: 100%;
+  background-image: url("../images/banner.jpg");
+  background-size: 100% 480px;
+  display: flex;
+  align-items: flex-end;
+}
+body .banner .overlay {
+  padding: 10px;
+  width: 100%;
+  background-color: #0e0d1ab3;
+  display: flexbox;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+body .btn {
+  width: 100%;
+  background-color: #0e0d1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+body .btn .btn-link {
+  margin: 10px 15px 10px 15px;
+  color: #45b5fe;
+  padding: 5px 15px;
   text-decoration: none;
 }
-/*# sourceMappingURL=style.css.map */
+body .btn .btn-link:hover {
+  font-weight: bold;
+  color: #0e0d1a;
+  background: #45b5fe;
+  border-radius: 5em;
+}
+body .about {
+  padding: 25px 0px 25px 0px;
+  width: 100%;
+  display: flex;
+  background-color: #0e0d1a;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+body .about .about-text {
+  width: 50%;
+  padding: 20px;
+  margin-right: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body .about .highlight {
+  margin-right: 10%;
+  padding: 25px 0px 25px 0px;
+  display: flex;
+  align-items: center;
+}
+body .about .highlight .box {
+  margin: 10px;
+  text-align: center;
+}
+body .about .highlight .box .block {
+  margin: 10px;
+  color: white;
+}
+body .elements {
+  padding: 40px 0px 40px 0px;
+  width: 100%;
+  background-color: #0e0d1a;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body .elements .skill {
+  height: 200px;
+  width: 20%;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border: 2px #45b5fe solid;
+}
+body .elements .bullet {
+  margin-top: 10px;
+  list-style: none;
+  line-height: 40px;
+}
+body .projects {
+  padding: 40px 0px 40px 0px;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: #0e0d1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .projects .thumbnail {
+  height: 200px;
+  width: 15%;
+  margin: 11px;
+  text-align: center;
+  border: 1px #45b5fe solid;
+  background-size: cover;
+  display: flexbox;
+}
+body .projects .thumbnail .show {
+  color: white;
+  background-color: #45b5fea5;
+  text-shadow: 0px 0px 7px black;
+  line-height: 200px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+body .projects .thumbnail .show:hover {
+  height: 0px;
+  color: transparent;
+  text-shadow: none;
+}
+body .projects .p1 {
+  background-image: url("../images/portfolio/p1.jpg");
+}
+body .projects .p2 {
+  background-image: url("../images/portfolio/p2.jpg");
+}
+body .projects .p3 {
+  background-image: url("../images/portfolio/p3.jpg");
+}
+body .projects .p4 {
+  background-image: url("../images/portfolio/p4.jpg");
+}
+body .projects .p5 {
+  background-image: url("../images/portfolio/p5.jpg");
+}
+body .projects .p6 {
+  background-image: url("../images/portfolio/p6.jpg");
+}
+body .projects .p7 {
+  background-image: url("../images/portfolio/p7.jpg");
+}
+body .projects .p8 {
+  background-image: url("../images/portfolio/p8.jpg");
+}
+body .projects .p9 {
+  background-image: url("../images/portfolio/p9.jpg");
+}
+body .projects .p10 {
+  background-image: url("../images/portfolio/p10.jpg");
+}
+body .tab {
+  width: 100%;
+  display: flex;
+  padding: 20px 0px 20px 0px;
+  justify-content: center;
+  text-transform: uppercase;
+}
+body .all-services {
+  padding: 25px 0px 25px 0px;
+  width: 100%;
+  background-color: #0e0d1a;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body .all-services .my-service {
+  margin: 20px;
+  width: 35%;
+  display: flex;
+  justify-content: left;
+}
+body .all-services .my-service .service-img {
+  height: 300px;
+  width: 40%;
+  border: 0.5px solid #45b5fe;
+  display: flex;
+  overflow: hidden;
+}
+body .all-services .my-service .service-text {
+  height: 180px;
+  width: 60%;
+  border: 0.5px solid #45b5fe;
+  border-left: 0px;
+  padding: 15px;
+  color: white;
+}
+body .all-services .my-service .service-text .content {
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+.hire {
+  padding: 40px 0px 40px 0px;
+  width: 100%;
+  display: flex;
+  background-color: #0e0d1a;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.hire .form {
+  width: 30%;
+  margin-left: 30px;
+}
+.hire .form .form-data {
+  margin-top: 5px;
+  line-height: 50px;
+}
+.hire .form .form-data input {
+  height: 30px;
+  width: 100%;
+  text-indent: 5px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-links .social {
+  width: 50%;
+  display: flex;
+  padding: 20px 0px 20px 0px;
+}
+.social-links .icon {
+  padding-left: 20px;
+  width: 30px;
+  height: 30px;
+  display: inline-flexbox;
+  justify-content: center;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  padding: 20px 0px 20px 0px;
+  background-color: #0e0d1a;
+}
