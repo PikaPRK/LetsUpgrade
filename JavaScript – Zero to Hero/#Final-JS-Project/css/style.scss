@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: #0e0d1a;
+    font-family: 'Poppins';
+}
+
+span{
+    color: #45b5fe;
+}
+
+// ===== Header =====
+.header{
+    width: 100%;
+    background-color: #0e0d1a;
+    display: flex;
+    justify-content: center;
+
+    .container{
+        width: 85%;
+        display: flex;
+        padding: 10px 0px 10px 0px;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo{
+            width: 15%;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 24px;
+            color: white;
+            text-align: left;
+            align-items: center;
+        }
+
+        .game{
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 24px;
+            color: white;
+            text-align: center;
+            align-items: center;
+        }
+
+        .countdown{
+            width: 15%;
+            color: white;
+            display: flex;
+            text-align: center;
+            align-items: center;
+        }
+    }
+}
+
+img{
+    width: 100%;
+}
+
+// ===== Game Area =====
+.title{
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
+    font-weight: bold;
+}
+
+.memory-game {
+    width: 85%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0px 10px 0px;
+    perspective: 1000px;
+
+    .memory-card {
+        width: calc(11% - 10px);
+        height: calc(33.333% - 10px);
+        margin: 10px;
+        cursor: pointer;
+        position: relative;
+        transform: scale(1);
+        transform-style: preserve-3d;
+        transition: transform .5s;
+    }
+
+    .front-face{
+        position: absolute;
+        border-radius: 10px;
+        box-shadow: 0px 0px 2px #f2f2f2;
+        background: #3d9fe1;
+        backface-visibility: hidden;
+    }
+
+    .back-face{
+        position: absolute;
+        border-radius: 10px;
+        box-shadow: 0px 0px 2px #f2f2f2;
+        background: #45b5fe;
+        backface-visibility: hidden;
+    }
+
+    .memory-card:active {
+        transform: scale(0.95);
+        transition: transform .2s;
+    }
+      
+    .memory-card.flip {
+        transform: rotateY(180deg);
+    }
+}
+  
+  
+  
+  .front-face {
+    transform: rotateY(180deg);
+  }
+
+// ===== Footer =====
+.contain-social{
+    width: 100%;
+    display: flex;
+    background: #f2f2f2;
+    justify-content: center;
+
+    .social-links{
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .social{
+            padding: 10px 0px 10px 0px;
+        }
+
+        .icon{
+            padding: 10px 10px 5px 10px;
+            width: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    padding: 5px 0px 5px 0px;
+    background-color: #0e0d1a;
+}
