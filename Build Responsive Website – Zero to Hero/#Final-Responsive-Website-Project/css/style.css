@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Poppins";
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+}
+
+span {
+  color: #f9004d;
+}
+
+.header {
+  width: 100%;
+  margin: auto;
+}
+.header .container {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+.header .container .logo {
+  color: white;
+}
+.header .container a {
+  text-decoration: none;
+  color: white;
+}
+.header .container a:hover {
+  color: #f9004d;
+}
+.header .container li, .header .container .nav {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 20px;
+}
+.header .container .btn {
+  color: #f9004d;
+  border: 2px solid #f9004d;
+  border-radius: 5em;
+  padding: 2px 20px;
+  transition: transform 0.2s;
+}
+.header .container .btn:hover {
+  color: white;
+  background-color: #f9004d;
+  transform: scale(1.05);
+}
+
+.content {
+  width: 85%;
+  margin: auto;
+}
+.content .hero {
+  width: 85%;
+  padding-top: 100px;
+  color: white;
+  justify-content: center;
+  line-height: 50px;
+}
+.content .hero .newsletter form {
+  width: 450px;
+  max-width: 100%;
+  margin: 10px 0px;
+  position: relative;
+}
+.content .hero .newsletter form input:first-child {
+  width: 100%;
+  display: inline-block;
+  padding: 10px;
+  border: 2px solid #f9004d;
+  border-radius: 5em;
+}
+.content .hero .newsletter form input:last-child {
+  color: white;
+  position: absolute;
+  display: inline-block;
+  border: none;
+  border-radius: 5em;
+  padding: 6px 25px;
+  background-color: #f9004d;
+  top: 12px;
+  right: -15px;
+  cursor: pointer;
+}
+
+.social-links {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2d0;
+}
+.social-links .social {
+  width: 50%;
+  display: flex;
+  padding: 20px 0px 20px 0px;
+}
+.social-links .icon {
+  padding-left: 20px;
+  width: 30px;
+  height: 30px;
+  display: inline-flexbox;
+  justify-content: center;
+}

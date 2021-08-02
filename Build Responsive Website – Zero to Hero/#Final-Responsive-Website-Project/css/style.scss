@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Poppins';
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+}
+
+span{
+    color: #f9004d;
+}
+
+// ===== Header =====
+.header{
+    width: 100%;
+    margin: auto;
+
+    .container{
+        width: 85%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 30px;
+
+        .logo{
+            color: white;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover{
+            color: #f9004d;
+        }
+
+        li, .nav{
+            list-style: none;
+            display: inline-block;
+            padding: 0px 20px;
+        }
+
+        .btn{
+            color: #f9004d;
+            border: 2px solid #f9004d;
+            border-radius: 5em;
+            padding: 2px 20px;
+            transition: transform .2s;
+        }
+
+        .btn:hover{
+            color: white;
+            background-color: #f9004d;
+            transform: scale(1.05);
+        }
+    }
+}
+
+// ===== Hero =====
+.content{
+    width: 85%;
+    margin: auto;
+
+    .hero{
+        width: 85%;
+        padding-top: 100px;
+        color: white;
+        justify-content: center;
+        line-height: 50px;
+
+        .newsletter form{
+            width: 450px;
+            max-width: 100%;
+            margin: 10px 0px;
+            position: relative;
+        }
+
+        .newsletter form input:first-child{
+            width: 100%;
+            display: inline-block;
+            padding: 10px;
+            border: 2px solid #f9004d;
+            border-radius: 5em;
+        }
+
+        .newsletter form input:last-child{
+            color: white;
+            position: absolute;
+            display: inline-block;
+            border: none;
+            border-radius: 5em;
+            padding: 6px 25px;
+            background-color: #f9004d;
+            top: 12px;
+            right: -15px;
+            cursor: pointer;
+        }
+    }
+}
+
+// ===== Footer =====
+.social-links{
+    position:absolute;
+    bottom:0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2d0;
+
+    .social{
+        width: 50%;
+        display: flex;
+        padding: 20px 0px 20px 0px;
+    }
+
+    .icon{
+        padding-left: 20px;
+        width: 30px;
+        height: 30px;
+        display: inline-flexbox;
+        justify-content: center;
+    }
+}
